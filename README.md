@@ -1,9 +1,4 @@
-<p align="center">
-  <a href='https://www.omise.co'>
-    <img src="https://cdn.omise.co/assets/omise-logo/omise-wordmark.png" width="300" />
-  </a>
-</p>
-<br />
+![Alt text](test-automation/img/zipmex-logo.jpeg?raw=true "Zipmex")
 
 ## Test challenge for QA Engineer
 
@@ -11,7 +6,6 @@ There are 2 sections to be completed:
 
 - [Test Strategies](#section-1-test-strategies)
 - Test Automation
-
   - [Mobile Test design](#section-2-Mobile-test-design)
   - [REST API Test Automation](#section-3-rest-api-test-automation)
 
@@ -199,23 +193,29 @@ Moreover we need to ensure the test cases are able to be automated in End-to-end
 
 ---
 
-## Section 3: REST API Test Automation
+## Section 3: REST API test automation
+1. Create a automation test scripts to get the value from this API endpoint:
 
-#### Preparation
+    https://public-api.zipmex.net/api/v1.0/summary
 
-Feel free to use any mock services or API endpoint to be tested. Then we would like you to write the automation test scripts to get or create value from those endpoints. We expected to you to include:
+2. Then write the value to log file or log to console as markdown format.
 
-- GET method scenarios
-- POST method scenarios
-
-#### Tools
-
-🤖 **Feel free to use any language or scripts which is easy for you.** 🤖
+```
+Zipmex market cap
+| instrument | last_price | lowest_24hr | highest_24hr |
+|:-----------|-----------:|------------:|-------------:|
+| USD_BTC    |   56713.76 |    56575.22 |     57805.27 |
+| USD_ZMT    |     1.2568 |      1.2302 |       1.2568 |
+...
+| USDT_GOLD  |   57.1     |           0 |            0 |
+```
 
 #### Mission
+- [ ] Follow the requirement on both Web UI and API testing
+- [ ] Write the automate test scripts the execution the test cases.
+- [ ] Compose the README how to setup the tool and run the test automation scripts (deponds on your submittion tools). Let's say we would like to share it to anyone who doesn't have background.
 
-- [ ] Provide the test automation scripts
-- [ ] Provide installation steps and how to run and check the results
+🤖 **Feel free to use any language or scripts which is easy for you. 🤖
 
 ---
 
